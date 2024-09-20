@@ -1,0 +1,667 @@
+/* Start global rules */
+*{
+    box-sizing: border-box;
+}
+
+.one{
+    background-color: rgb(29, 89, 69);
+    /* Full viewport height */
+    height: 100vh;
+}
+.container {
+    padding-left: 10px;
+    padding-right: 10px;
+    color: antiquewhite;
+    line-height: 40px;
+    text-align: center;
+    height: 200px;
+    background-color: rgb(34, 82, 66);
+    width: 140px;
+    border-top-left-radius: 25px 30px;
+    border-bottom-right-radius: 25px 30px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-left: 15px;
+    top: 20px;
+    box-shadow: 3px 3px 9px 0px black, -3px 3px 9px 0px black;
+}
+.first{
+    font-size: 1.9em;
+    margin: 0.67em 0;
+    font-weight: bold;
+}
+.container:hover{
+    color: rgb(34, 82, 66);
+    background-color: antiquewhite;
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+}
+
+@media (max-width: 768px) {
+    .container{
+        font-size: 1.5rem;
+    }
+}
+
+.container1{
+    background-color: rgb(34, 82, 66);
+    width: 70%;
+    position: relative;
+    /* margin-left: 230px; */
+    display: flex;
+    top: -40px;
+    height: 400px;
+    box-shadow: 3px 3px 9px 0px black, -3px 3px 9px 0px black;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    margin-left: 220px;
+}
+.container1 .Logo{
+    position: absolute;
+    width: 210px;
+    height: 210px;
+    margin-top: -90px;
+    margin-left: 250px;
+    box-shadow: -6px 6px 10px 0px #b3956d;
+    margin-bottom: 30px;
+    left: 330px;
+}
+.container1 .name{
+    position: absolute;
+    color: antiquewhite;
+    font-family: Lora-Medium;
+    top: 20%;
+    margin-left: -465px;
+    font-style: italic;
+    font-size: 45px;
+}
+.container1 .work{
+    position: absolute;
+    color: antiquewhite;
+    font-family: Lora-Medium;
+    top: 40%;
+    margin-left: -480px;
+    font-style: italic;
+    font-size: 35px;
+}
+.bio{
+    font-size: 3.5rem;
+    font-weight: bold;
+    color: orange;
+    position: absolute;
+    top: 250px;
+    left: 5%;
+    animation: fadeIn 2s ease-in-out;
+    -webkit-animation: fadeIn 2s ease-in-out;
+}
+.load{
+    display: inline-block;
+    font-size: 4rem;
+    margin-right: 10px;
+}
+.load span{
+    display: inline-block;
+    animation: moving 1.5s infinite;
+    -webkit-animation: moving 1.5s infinite;
+}
+.load span:nth-child(2) {
+    animation-delay: 0.3s;
+}
+
+.load span:nth-child(3) {
+    animation-delay: 0.6s;
+}
+
+@keyframes moving {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-20px);
+    }
+    60% {
+        transform: translateY(-10px);
+    }
+}
+.container1 .description{
+    color: antiquewhite;
+    position: absolute;
+    top: 59%;
+    width: 358px;
+    margin-left: -360px;
+    line-height: 24px;
+    font-size: 12px;
+    font-family: Lora-SemiBoldItalic;
+    display: none;
+}
+.zoom-in {
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    transition-duration: 0.3s;
+}
+@keyframes fadeIn{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+@keyframes fadeOut{
+    from{
+        opacity:0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+.company{
+    color: antiquewhite;
+    text-decoration: none;
+}
+.company:hover{
+    color:orange;
+}
+.simple1{
+    position: absolute;
+    color: orange;
+    top: 115px;
+    left: 62px;
+    font-size: 40px;
+    box-shadow: -5px -6px 6px 0 orange;
+}
+.simple2{
+    position: absolute;
+    color: orange;
+    top: 131px;
+    left: 307px;
+    font-size: 40px;
+    box-shadow: 5px 6px 6px 0 orange;
+}
+.Abb{
+    color: orange;
+    position: absolute;
+    border-color: orange;
+    border-style: solid;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    line-height: 40px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    top: 8px;
+    left: 5px;
+    box-shadow: -2px -2px 11px 0 orange;
+}
+.Abb2{
+    color: orange;
+    position: absolute;
+    border-color: orange;
+    border-style: solid;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    top: 33px;
+    left: 28px;
+    box-shadow: -2px -2px 11px 0 orange;
+}
+.Abb3{
+    color: orange;
+    position: absolute;
+    border-color: orange;
+    border-style: solid;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    line-height: 40px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    top: 60px;
+    left: 30px;
+    box-shadow: -2px -2px 11px 0 orange;
+}
+.Abb4{
+    color: orange;
+    position: absolute;
+    border-color: orange;
+    border-style: solid;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    line-height: 40px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    bottom: 8px;
+    right: 5px;
+    box-shadow: -2px -2px 11px 0 orange;
+}
+.Abb5{
+    color: orange;
+    position: absolute;
+    border-color: orange;
+    border-style: solid;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    bottom: 33px;
+    right: 28px;
+    box-shadow: -2px -2px 11px 0 orange;
+}
+.Abb6{
+    color: orange;
+    position: absolute;
+    border-color: orange;
+    border-style: solid;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    line-height: 40px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    bottom: 60px;
+    right: 30px;
+    box-shadow: -2px -2px 11px 0 orange;
+}
+.head{
+    list-style: none;
+    position: absolute;
+    top: 30px;
+    display: inline-flex;
+    left: 570px;
+    color: orange;
+    font-size: 20px;
+    scroll-behavior: smooth;
+}
+.head li {
+    margin-right: 70px;
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+}
+.head li a{
+    text-decoration: none;
+    color: orange;
+}
+.head li :last-child{
+    margin-right: 0;
+}
+
+.head li a:hover{
+    color: antiquewhite;
+
+}
+.head li:hover{
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+
+}
+
+.two{
+    background-color: antiquewhite;
+        height: 100vh; 
+        display: flex;
+        justify-content: center;
+    }
+.About{
+    color: antiquewhite;
+    font-size: 33px;
+    position: absolute;
+    left: 20px;
+    box-shadow: -4px 3px 6px 0 #9b8888;
+    width: 250px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    background-color: rgb(14 71 52);
+    border-top-left-radius: 25px 30px;
+    border-bottom-right-radius: 25px 30px;
+}
+.container2{
+    position: absolute;
+    left: 40px;
+    top: 750px;
+    background-color: antiquewhite;
+    box-shadow: -4px 3px 6px 0 #9b8888, 4px -3px 6px 0 #9b8888;
+    display: flex;
+    margin-left: 20px;
+    width: 300px;
+    height: 390px;}
+
+.Education{
+    color: rgb(29, 89, 69);
+    position: absolute;
+    top: -27px;
+    left: 20px;
+    font-size: 30px;
+}
+.A{
+    color: rgb(29, 89, 69);
+    font-family: Lora-Medium;
+    position: absolute;
+    line-height: 35px;
+    width: 270px;
+    font-size: 17px;
+    left: 20px;
+    top: 30px;
+}
+.container3{
+    position: absolute;
+    left: 450px;
+    top: 750px;
+    background-color: antiquewhite;
+    box-shadow: -4px 3px 6px 0 #9b8888, 4px -3px 6px 0 #9b8888;
+    display: flex;
+    margin-left: 20px;
+    width: 300px;
+    height: 390px;}
+
+.Experience
+{
+    color: rgb(29, 89, 69);
+    position: absolute;
+    top: -27px;
+    left: 10px;
+    font-size: 28px;
+}
+.B{
+    color: rgb(29, 89, 69);
+    font-family: Lora-Medium;
+    position: absolute;
+    line-height: 35px;
+    width: 277px;
+    font-size: 18px;
+    left: 20px;
+    top: 50px;
+}
+.B .Special{
+    font-size: 18px;
+    font-weight: bold;
+}
+.container4{
+    position: absolute;
+    right:40px;
+    top: 750px;
+    background-color: antiquewhite;
+    box-shadow: -4px 3px 6px 0 #9b8888, 4px -3px 6px 0 #9b8888;
+    display: flex;
+    margin-left: 20px;
+    width: 300px;
+    height: 390px;}
+.Goals
+{
+    color: rgb(29, 89, 69);
+    position: absolute;
+    top: -27px;
+    left: 20px;
+    font-size: 30px;
+}
+.C{
+    color: rgb(29, 89, 69);
+    font-family: Lora-Medium;
+    position: absolute;
+    line-height: 22px;
+    width: 275px;
+    font-size: 16px;
+    left: 20px;
+    top: 35px;
+}
+.three{
+    background-color: rgb(29, 89, 69);
+    height: 100vh; 
+    display: flex;
+    justify-content: center;
+}
+.project{
+    color:rgb(14 71 52);
+    font-size: 33px;
+    position: absolute;
+    left: 20px;
+    box-shadow: -4px 3px 15px 0 rgb(0 1 1);
+    width: 250px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    background-color: antiquewhite;
+    border-top-left-radius: 25px 30px;
+    border-bottom-right-radius: 25px 30px;
+}
+.Pro{
+    width: 350px;
+    height: 350px;
+    position: absolute;
+    top: 1390px;
+    transform: skew(11deg, 340deg);
+    left: 60px;
+    box-shadow: -5px 5px 16px 0 black;
+}
+.three .title1{
+    font-size: 15px;
+    background-color: rgb(14 71 52);
+    color: antiquewhite;
+    width: 100px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    position: absolute;
+    left: 450px;
+    top: 1260px;
+    transform: rotate(312deg);
+    z-index: 2;
+}
+.proj{
+    line-height: 33px;
+    width: 340px;
+    height: 480px;
+    position: absolute;
+    top: 1250px;
+    color: rgb(14 71 52);
+    background-color: antiquewhite;
+    font-family: "Lora-VariableFont_wght";
+    box-shadow: -3px 2px 5px 0 rgb(199 199 199 / 33%);
+    left: 490px;
+    border-radius: 25px;
+    font-size: 20px;
+    z-index: 1;
+}
+.proj .title2{
+    position: absolute;
+    font-size: 23px;
+    font-weight: bold;
+    left: 20px;
+    top: 10px;
+}
+.proj .title3{
+    position: absolute;
+    font-size: 23px;
+    font-weight: bold;
+    left: 20px;
+    top: 280px;
+}
+.proj .compl1{
+    position: absolute;
+    font-size: 15px;
+    left: 20px;
+    top: 46px;
+    line-height: 30px;
+    width: 330px;
+}
+.Git{
+    position: absolute;
+    overflow: hidden;
+    width: 320px;
+}
+.Git a{
+    text-decoration: none;
+    color:rgb(14 71 52);
+    overflow-wrap: break-word;
+    font-size: 11px;
+}
+.Git a:hover{
+    color: orange;
+}
+.proj .compl2{
+    position: absolute;
+    font-size: 15px;
+    left: 20px;
+    top: 315px;
+    line-height: 30px;
+}
+.three .title4{
+    font-size: 15px;
+    background-color: rgb(14 71 52);
+    color: antiquewhite;
+    width: 80px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    position: absolute;
+    left: 850px;
+    top: 1233px;
+    transform: rotate(312deg);
+    z-index: 2;
+    -webkit-transform: rotate(312deg);
+    -moz-transform: rotate(312deg);
+    -ms-transform: rotate(312deg);
+    -o-transform: rotate(312deg);
+}
+.three .skills .skill1{
+    background-color: antiquewhite;
+    color:rgb(14 71 52) ;
+    font-size: 17px;
+    font-family: "Lora-VariableFont_wght";
+    border-radius: 25px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+    box-shadow: -3px 2px 5px 0 rgb(199 199 199 / 33%);
+    width: 200px;
+    height: 250px;
+    position: absolute;
+    top: 1240px;
+    left: 900px;
+    text-align: center;
+    line-height: 35px;
+}
+.three .skills .skill2{
+    background-color: antiquewhite;
+    color:rgb(14 71 52) ;
+    font-size: 17px;
+    font-family: "Lora-VariableFont_wght";
+    border-radius: 25px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+    box-shadow: -3px 2px 5px 0 rgb(199 199 199 / 33%);
+    width: 210px;
+    height: 225px;
+    position: absolute;
+    top: 1565px;
+    left: 900px;
+    text-align: center;
+    line-height: 37px;
+}
+.separ{
+    color: rgb(19, 49, 39);
+    font-size: 46px;
+    position: absolute;
+    top: 1498px;
+    left: 980px;
+    font-weight: bolder;
+}
+.four{
+    background-color:antiquewhite;
+    height: 50vh;
+}
+.Contact{
+color: antiquewhite;
+font-size: 33px;
+position: absolute;
+left: 20px;
+box-shadow: -4px 3px 6px 0 #9b8888;
+width: 250px;
+height: 50px;
+text-align: center;
+line-height: 50px;
+background-color: rgb(14 71 52);
+border-top-left-radius: 25px 30px;
+border-bottom-right-radius: 25px 30px;
+}
+.phones{
+    color: rgb(19, 49, 39);
+    font-size: 30px;
+    position: absolute;
+    top: 1920px;
+    left: 300px;
+    font-weight: bold;
+}
+.phones span{
+    font-size: 25px;
+    line-height: 45px;
+}
+.social{
+    color: rgb(19, 49, 39);
+    position: absolute;
+    top: 1920px;
+    left: 800px;
+    font-size: 30px;
+    font-weight: bold;
+}
+.social a{
+    color:  rgb(19, 49, 39);
+    display: block;
+    flex-direction: column;
+    line-height: 45px;
+    font-weight: none;
+}
+.social a:hover{
+    color: orange;
+}
+
+
+
+
